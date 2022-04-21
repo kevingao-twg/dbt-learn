@@ -1,0 +1,7 @@
+dbt-snowflake==1.0.0
+dbt-core==1.0.1
+sqlfluff==0.11
+sqlfluff-templater-dbt==0.11
+smbprotocol==1.6.1
+openpyxl==3.0.7
+pandas==1.3.2
