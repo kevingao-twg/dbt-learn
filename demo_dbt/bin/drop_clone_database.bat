@@ -1,0 +1,1 @@
+dbt run-operation drop_clone_database
