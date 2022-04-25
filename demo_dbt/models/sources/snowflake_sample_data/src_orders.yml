@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: src_customer
+  - name: src_orders
     database: SNOWFLAKE_SAMPLE_DATA
     schema: TPCH_SF1
     tables:
-      - name: customer
+      - name: orders

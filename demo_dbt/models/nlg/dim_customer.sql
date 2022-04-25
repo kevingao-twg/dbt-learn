@@ -8,7 +8,6 @@
 
 with base_customer as (
     select * from {{ref('nlg__base_customer')}}
-    where customer_nation_key = 1
 ),
 
 stage as (
