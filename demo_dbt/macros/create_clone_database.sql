@@ -1,6 +1,6 @@
 {% macro create_clone_database() %}
 
-{% set clone_db = 'mydb' %}
+{% set clone_db = 'mydb_307519' %}
 
 {% set results = run_query('create or replace database ' ~ clone_db) %}
 
