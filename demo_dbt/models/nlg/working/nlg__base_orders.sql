@@ -14,8 +14,8 @@ renamed as (
     O_CUSTKEY as customer_key,
     O_ORDERSTATUS as order_status,
     O_ORDERDATE as order_date,
-    O_TOTALPRICE as order_total_price
-    -- O_ORDERPRIORITY as order_priority
+    O_TOTALPRICE as order_total_price,
+    O_ORDERPRIORITY as order_priority
     from source
 )
 
