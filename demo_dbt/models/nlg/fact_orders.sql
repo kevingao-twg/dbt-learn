@@ -11,7 +11,7 @@ with base_orders as (
 ),
 
 stage as (
-    select order_key, customer_key,order_status,order_date, order_total_price from base_orders
+    select order_key, customer_key,order_status,order_date, order_total_price, order_priority from base_orders
 ),
 
 final as (
@@ -21,7 +21,8 @@ final as (
     {{dbt_utils.surrogate_key(['customer_key'])}}::varchar(64) as dim_customer_key,
     order_status,
     order_date,
-    order_total_price  from stage
+    order_total_price,
+    order_priority  from stage
 )
 
 select * from final
